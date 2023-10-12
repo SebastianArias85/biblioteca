@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoBiDig</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <!--NAVEGACION-->
+
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="assets/img/MoBiDig.svg" alt="Bootstrap" width="auto" height="60">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="admin.html"
+                            style="color: rgb(228, 224, 224)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                            style="color: rgb(228, 224, 224)">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="autores.html"
+                            style="color: rgb(228, 224, 224)">Autores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="libros.html"
+                            style="color: rgb(228, 224, 224)">Libros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: rgb(228, 224, 224)">
+                            ADMIN
+                        </a>
+                        <ul class="dropdown-menu dropdown-center">
+                            <li><a class="dropdown-item" href="#">User 1</a></li>
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="index.html" style="color:red">Cerrar sesion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!--JUMBOTRON-->
+    <section class="jumbotron">
+        <div class="cover">
+            <h1>MoBiDig</h1>
+            <h3>Modulo Bibliotecario Digital de la Fuerza Aerea Argentina</h3>
+        </div>
+    </section>
+
+
+
+    <div class="container">
+
+        <h2 style="text-align:center; margin-top:10px; font-size:50px;">LIBROS</h2>
+
+        <!--BUSCADOR-->
+        <section>
+            <div class="buscador">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="busqueda ">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>RAG19</td>
+                        <td>Reglamento</td>
+                        <td>V</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Pedro Perez</td>
+                        <td>Revista</td>
+                        <td>V</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Maria Sarlanga</td>
+                        <td>Libro</td>
+                        <td>V</td>
+                        <td>X</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <!--FOOTER-->
+    <footer class="d-flex bg-dark flex-wrap justify-content-between align-items-center py-3 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary" style="color: rgb(223, 220, 220)">&copy; 2023 Centro de Simulación
+            y
+            Juegos de Guerra</p>
+
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="assets/img/MoBiDig.svg" alt="Bootstrap" width="auto" height="60">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+                    style="color: rgb(223, 220, 220)">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+                    style="color: rgb(223, 220, 220)">Catalogo</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+                    style="color: rgb(223, 220, 220)">Autores</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+                    style="color: rgb(223, 220, 220)">Libros</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+</html>
